@@ -1,0 +1,28 @@
+DEF FEEDTHEDOGS(dog1amount, dog2amount, dog1medications, dog2medications)
+  get two dog bowls out
+  SET one dog bowl to dogbowl1
+  SET the other dog bowl to dogbowl2
+  Add dog1amount and dog1medications to dogbowl1
+  Add dog2amount and dog2medications to dogbowl2
+  Give dogbowl1 to dog 1
+  Give dogbowl2 to dog 2
+END DEF
+
+
+rate the server between 0-4
+DEF TIP(totalBillAmount, rating)
+	SET rating to rating times 0.05
+	SET tipTotal to totalBillAmount times rating
+	RETURN tipTotal
+END DEF
+
+DEF SCHEDULE(hoursToWork,listOfTasks)
+	SET timeLeft to hoursToWork
+	SET tasks as an empty array
+	WHILE timeLeft > 0
+	  Add a task from listOfTasks to the tasks array
+	  Estimate the time to complete this task
+	  Update the timeLeft to reflect the time after completing this task
+	  Remove the task from the listOfTasks
+	END WHILE 
+END DEF
