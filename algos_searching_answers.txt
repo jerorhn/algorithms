@@ -1,0 +1,8 @@
+1. Using linear search, it would take 7 iterations to get to G.
+2. Using binary search, it would take 3 iterations to get to G.
+3. fib(10) = 21 + 34 = 55
+   fib(11) = 34 + 55 = 89
+   fib(12) = 55 + 89 = 144
+   
+1. An unsorted collection can only be searched linearly.  
+2. I would search a large sorted collection using a recursive binary search.  Binary search is much quicker because it cuts out half of the items with each iteration.  I would choose a recursive version because it takes less time to run.  
