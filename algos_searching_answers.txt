@@ -3,6 +3,8 @@
 3. fib(10) = 21 + 34 = 55
    fib(11) = 34 + 55 = 89
    fib(12) = 55 + 89 = 144
-   
-1. An unsorted collection can only be searched linearly.  
-2. I would search a large sorted collection using a recursive binary search.  Binary search is much quicker because it cuts out half of the items with each iteration.  I would choose a recursive version because it takes less time to run.  
+
+Calculating fibonnaci recursively takes 0.000057.  Iteratively it takes 0.000018.  
+
+1. An unsorted collection can only be searched linearly.
+2. I would search a large sorted collection using a recursive binary search.  Binary search is much quicker because it cuts out half of the items with each iteration.  I would choose a recursive version because it takes less time to run.  Using benchmarks, it takes the same million item collection 0.000050 to run iteratively but only 0.000015 to run recursively.

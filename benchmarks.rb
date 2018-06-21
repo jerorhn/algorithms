@@ -22,10 +22,10 @@ end
 
 puts Benchmark.measure {
 	puts "iterative"
-	binary_search_iterative(benchmarkarr, 756,486)
+	binary_search_iterative(benchmarkarr, 756486)
 }
 
 puts Benchmark.measure {
 	puts "recursive"
-	binary_search_recursive(benchmarkarr, 756,486)
+	binary_search_recursive(benchmarkarr, 756486)
 }
